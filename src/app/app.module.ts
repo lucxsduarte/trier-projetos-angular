@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
+import { CpfPipe } from './cpf.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CpfPipe
   ],
   imports: [
     BrowserModule,

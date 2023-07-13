@@ -1,0 +1,26 @@
+<div>
+    <fieldset>
+        <legend>Usuários cadastrados</legend>
+        <br>
+        <table border="1" cellSpacing="0">
+            <tr>
+                <td><b>Nome</b></td>
+                <td><b>Email</b></td>
+                <td><b>Senha</b></td>
+                <td><b>Idade</b></td>
+                <td><b>Idade</b></td>
+                <td><b>Sexo</b></td>
+            </tr>
+            <tr *ngFor="let pessoa of pessoas">
+                <td>{{pessoa.nome}}</td>
+                <td>{{pessoa.email}}</td>
+                <td>{{pessoa.senha}}</td>
+                <td>{{pessoa.idade}}</td>
+                <td>{{pessoa.cpf}}</td>
+                <td>{{pessoa.sexo}}</td>
+            </tr>
+        </table>
+        <br>
+        <app-botao-delete-all *ngIf="pessoas.length" (click)="deleteAll()"></app-botao-delete-all>
+    </fieldset>
+</div>

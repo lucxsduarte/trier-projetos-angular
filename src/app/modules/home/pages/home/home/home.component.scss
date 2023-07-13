@@ -1,0 +1,36 @@
+.boxHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    padding: 10px;
+    margin: none;
+    background-color: #111;
+    color: #f1f1f1;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.boxMenu {
+    display: flex;
+    justify-content: left;
+}
+
+.boxCadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro {
+    width: 50%;
+}
+
+.boxLista {
+    display: flex;
+    justify-content: center;
+}
+
+.lista {
+    width: 50%;
+}

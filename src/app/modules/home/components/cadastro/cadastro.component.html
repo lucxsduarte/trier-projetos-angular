@@ -1,1 +1,30 @@
-<p>cadastro works!</p>
+<div>
+    <fieldset>
+        <legend>Cadastre-se</legend>
+        <br>
+        <label for="name">Nome: </label>
+        <input type="text" placeholder="Digite seu nome" [(ngModel)]="nome" #inputName required>
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" placeholder="exemplo@exemplo.com" [(ngModel)]="email" #inputEmail required>
+        <br><br>
+        <label for="senha">Senha: </label>
+        <input type="password" placeholder="!Exemplo123" [(ngModel)]="senha" maxlength="10" #inputSenha required>
+        <br><br>
+        <label for="idade">Idade: </label>
+        <input type="number" placeholder="Exemplo: 23" maxlength="2" #inputIdade required>
+        <br><br>
+        <label for="idade">CPF: </label>
+        <input type="number" placeholder="Exemplo: 111.111.111-11" maxlength="11" #inputCpf required>
+        <br><br>
+        <span>Sexo: </span>
+        <input type="radio" id="sexMasc" value="Masc" #inputSexoMasc>
+        <label for="sexMasc">Masculino</label>
+        <input type="radio" id="sexFem" value="Fem" #inputSexoFem>
+        <label for="sexFem">Feminino</label>
+        <br><br>
+        <div>
+            <button (click)="cadastraPessoa(inputName.value, inputEmail.value, inputSenha.value, inputIdade.value, inputCpf.value, inputSexoMasc.checked ? inputSexoMasc.value : inputSexoFem.value)">Cadastrar-se</button>
+        </div>
+    </fieldset>
+</div>

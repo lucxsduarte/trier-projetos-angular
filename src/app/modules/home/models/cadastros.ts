@@ -1,6 +1,8 @@
 export interface Cadastros {
     name: string;
-    cpf: number;
+    email: string;
+    senha: number;
     idade: number;
-    telefone: number;
+    cpf: number;
+    sexo: string;
 }
